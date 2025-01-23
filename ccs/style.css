@@ -1,3 +1,5 @@
+/*  */
+
 html{
     font-family: sans-serif;
     line-height: 160%;
@@ -5,6 +7,10 @@ html{
 
 body{
     background-color: #fff;
+    padding: 15px;
+    /* width: 80%;
+    margin: 0 auto; */
+
 }
 
 header{
@@ -16,18 +22,18 @@ h1{
 }
 
 main{
-    padding: 0 10px;
+    
 }
 
 .flex{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: center;
     gap: 5%;
 }
 
 .flex > div{
-    flex-basis: calc( 90% / 3 );
+    flex-basis: calc( 90% / 2 );
 
     background-color: #121212;
 
@@ -44,4 +50,20 @@ span{
 .flex-column{
     flex-direction: column;
     width: 100%;
+}
+
+
+
+
+@media screen and ( min-width: 768px ){
+    .flex > div{
+        flex-basis: calc( 90% / 3 );
+    
+    
+    }
+
+    body{
+        background-color: #fff;
+        padding: 30px;
+    }
 }
