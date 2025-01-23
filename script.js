@@ -38,29 +38,32 @@ const teamMembers = [
 ];
 
 
-const teamContainer = document.querySelector(".flex")
+const teamContainer = document.querySelector(".team-container")
 
 console.log(teamContainer)
 
 
-for (let i = 1; i < teamMembers.length; i++){
+for (let i = 0; i < teamMembers.length; i++){
      let element = teamMembers[i]
 
-     teamContainer.innerHtml += 
-     `<div class="flex">
-                <figure>
-                    <img height="90px" src="img/${element.img}" alt="">
-                </figure>
-                <div class="flex flex-column">
-                    <h5>${element.nome}</h5>
-                    <span>${element.role}</span>
-                    <span>${element.email}</span>
+     teamContainer.innerHTML += 
+     `<div class="card" style="width: 18rem;">
+                <img src="${element.img}" class="card-img-top" alt="${element.name}">
+                <div class="card-body">
+                    <h5 class="card-title">${element.name}</h5>
+                    <p class="card-text">${element.role}</p>
+                    <p class="card-text">${element.email}</p>
                 </div>
             </div>
      `
-
+    console.log(element)
 }
 
-let btn = document.getElementById ("button")
+let btn = document.getElementById ("button", function (event){
 
-btn.addEventListener("click , function)
+      event.
+
+
+})
+
+// btn.addEventListener('click' , function  )
